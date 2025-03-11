@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+
+.diario_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-family: 'Rowdies', sans-serif;
+  }
+  
+  textarea, select {
+    padding: 10px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--cinza-escuro);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    min-height: 60px;
+  }
+  
+  select {
+    height: 50px;
+  }
+  
+  button {
+    align-self: flex-start;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: var(--cinza-medio);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--cinza-escuro);
+  }
+  

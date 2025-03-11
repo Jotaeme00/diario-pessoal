@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+.Header {
+  background-color: var(--cinza-escuro);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; 
+}
+
+.Header h1, .Header h2 {
+  color: white; 
+  font-family: 'Doto', cursive;
+  font-size: 3rem; 
+  margin: 0; 
+  font-weight: 300; 
+}
+
+.Header h2 {
+  margin-top: 10px;
+}
