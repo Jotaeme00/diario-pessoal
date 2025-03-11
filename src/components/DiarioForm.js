@@ -8,7 +8,8 @@ function DiarioForm({ onAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (nota) {
-      onAdd(nota, humor);
+      const data = new Date().toLocaleDateString();
+      onAdd(nota, humor, data);
       setNota("");
       setHumor("");
     }

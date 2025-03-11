@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import styles from './EmprestimoList.module.css'
+import styles from './EmprestimoList.module.css';
 
 function EmprestimoList() { 
     const [pessoasEmprestadas, setPessoasEmprestadas] = useState([]);
     const [nome, setNome] = useState('');
     const [valor, setValor] = useState('');
 
-    
     useEffect(() => {
         const pessoasSalvas = JSON.parse(localStorage.getItem("pessoasEmprestadas"));
         if (pessoasSalvas) {
@@ -14,7 +13,6 @@ function EmprestimoList() {
         }
     }, []); 
 
-    
     const salvarNoLocalStorage = (dados) => {
         localStorage.setItem("pessoasEmprestadas", JSON.stringify(dados));
     };
@@ -82,8 +80,9 @@ function EmprestimoList() {
                 ))}
             </ul>
         </div>
-    )
+    );
 }
 
 export default EmprestimoList;
+
 

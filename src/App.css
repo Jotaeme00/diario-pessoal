@@ -29,3 +29,20 @@ button {
 button:hover {
   background-color: var(--cinza-escuro);
 }
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #c0c0c0;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: none;
+  color: #c0c0c0;
+}
